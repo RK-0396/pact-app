@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Shraddha Decision Portal</title>
+    <!-- Cute & playful fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Nunito:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- SweetAlert2 for cute popups -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- html2canvas for capturing the certificate -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Background Music & Controls -->
+    <button id="music-btn" class="music-btn" aria-label="Toggle Music">
+        <svg id="play-icon" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
+            fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+        </svg>
+        <svg id="pause-icon" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
+            fill="none" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+            <rect x="6" y="4" width="4" height="16"></rect>
+            <rect x="14" y="4" width="4" height="16"></rect>
+        </svg>
+    </button>
+    <audio id="bg-music" loop>
+        <source src="music.m4a" type="audio/mpeg">
+    </audio>
+
+    <!-- 1. LANDING PAGE -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content fade-in-on-load">
+            <div class="envelope-icon">💌</div>
+            <h1>A Very Important Life Proposal</h1>
+            <p class="subtitle">“Dear <strong>Shraddha</strong>, you’ve been shortlisted for a lifetime position…
+                details below 😄”</p>
+            <button id="start-btn" class="btn-primary pulse">Review Application 👇</button>
+        </div>
+    </section>
+
+    <!-- 2. JOB DESCRIPTION SECTION -->
+    <section id="job-desc" class="job-section">
+        <div class="job-card reveal-on-scroll">
+            <h2>📋 The "Job" Description</h2>
+            <ul class="job-details">
+                <li><span class="icon">💼</span> <strong>Position:</strong> My Favorite Person Forever</li>
+                <li><span class="icon">📍</span> <strong>Location:</strong> Wherever we both are ❤️</li>
+                <li><span class="icon">⏱️</span> <strong>Working Hours:</strong> Flexible (especially for naps & coffee
+                    dates ☕)</li>
+                <li><span class="icon">🏖️</span> <strong>Leaves:</strong> Unlimited… but missing me is compulsory 😉
+                </li>
+            </ul>
+
+            <div class="perks-section">
+                <h3>✨ Perks Included:</h3>
+                <div class="perks-grid">
+                    <div class="perk-card">😂 Unlimited laughter</div>
+                    <div class="perk-card">🍫 Random treats</div>
+                    <div class="perk-card">🎭 Occasional drama 😄</div>
+                    <div class="perk-card">🤝 Lifetime partnership</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- 4. THE BIG QUESTION SECTION -->
+    <section id="question" class="question-section">
+        <div class="question-container reveal-on-scroll">
+            <h2>❓ The Big Question</h2>
+            <p class="big-ask">“Would you consider relocating… <br>to a life full of fun, chaos, and a little bit of me?
+                😌”</p>
+
+            <div class="action-buttons">
+                <button id="accept-btn" class="btn-accept">💚 Accept the Offer</button>
+                <button id="negotiate-btn" class="btn-negotiate">😄 Let’s Negotiate (coffee first?)</button>
+            </div>
+
+            <p class="hr-note">“Don’t worry… HR (our parents 😄) will only be involved after mutual approval.”</p>
+        </div>
+    </section>
+
+    <!-- 5. CERTIFICATE MODAL (Climax) -->
+    <div id="certificate-modal" class="certificate-modal hidden">
+        <div class="certificate-content">
+            <span class="close-cert-icon" id="close-cert-icon">&times;</span>
+            <h1 class="cert-title">🏆 Official Love Agreement Certificate 🏆</h1>
+            <p class="cert-subtitle">This certifies that</p>
+            <h2 class="cert-name">Shraddha</h2>
+            <p class="cert-subtitle">has officially agreed to:</p>
+
+            <ul class="cert-list">
+                <li>💕 Be my favorite human</li>
+                <li>😊 Share smiles, jokes, and memories</li>
+                <li>😄 Handle my nonsense with patience</li>
+            </ul>
+
+            <p class="cert-subtitle">In return, I promise:</p>
+            <ul class="cert-list">
+                <li>🛡️ To always respect, support, and care</li>
+                <li>🎉 To keep things fun and real</li>
+                <li>🛑 To never make this feel like a “job”</li>
+            </ul>
+
+            <div class="cert-footer">
+                <p><strong>Effective from:</strong> The moment you smiled reading this</p>
+                <p class="signature">💖 Signed,<br>Someone who clearly likes you a lot</p>
+            </div>
+
+            <button id="close-cert" class="btn-primary">Claim Position!</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
