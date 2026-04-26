@@ -1,0 +1,25 @@
+{
+  "name": "pact-app",
+  "version": "1.0.0",
+  "description": "A fully responsive, modern, and emotionally engaging single-page proposal website. Built with HTML, CSS, and Vanilla JavaScript.",
+  "main": "script.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "date-fns": "^4.1.0",
+    "html2canvas": "^1.4.1",
+    "next": "^16.2.4",
+    "nodemailer": "^8.0.6",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "sweetalert2": "^11.26.24"
+  }
+}
