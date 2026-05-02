@@ -130,7 +130,7 @@ export default function Home() {
         message: 'She said YES! Shraddha has officially accepted the position.'
       };
 
-      emailjs.send("service_qgjcm1a", "template_9lkbmpl", templateParams, {
+      emailjs.send("service_42ihecq", "template_9lkbmpl", templateParams, {
         publicKey: "PQz8AdNu1C9HbK3nG",
       })
         .then((response) => console.log("EmailJS Success:", response.status, response.text))
